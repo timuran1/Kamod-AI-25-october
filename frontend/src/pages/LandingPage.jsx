@@ -248,7 +248,11 @@ const LandingPage = () => {
         </div>
         <div className="video-gallery">
           {portfolioVideos.map((video) => (
-            <div key={video.id} className="video-card" onClick={() => setSelectedVideo(video)}>
+            <div 
+              key={video.id} 
+              className={`video-card ${video.isShort ? 'video-card-vertical' : ''}`}
+              onClick={() => setSelectedVideo(video)}
+            >
               <div className="video-thumbnail">
                 <img src={video.thumbnail} alt={video.title} />
                 <div className="play-overlay">
@@ -264,7 +268,10 @@ const LandingPage = () => {
       {/* Video Modal */}
       {selectedVideo && (
         <div className="video-modal" onClick={() => setSelectedVideo(null)}>
-          <div className="video-modal-content" onClick={(e) => e.stopPropagation()}>
+          <div 
+            className={`video-modal-content ${selectedVideo.isShort ? 'video-modal-vertical' : ''}`}
+            onClick={(e) => e.stopPropagation()}
+          >
             <button className="modal-close" onClick={() => setSelectedVideo(null)}>
               ×
             </button>
@@ -282,6 +289,72 @@ const LandingPage = () => {
           </div>
         </div>
       )}
+
+      {/* Photography Gallery Section */}
+      <section className="photography-section">
+        <div className="section-header">
+          <h2 className="section-title">Photography</h2>
+          <p className="section-subtitle">Capturing moments through the lens</p>
+        </div>
+        <div className="photography-grid">
+          {photographyImages.map((photo) => (
+            <div 
+              key={photo.id} 
+              className="photo-card"
+              onClick={() => setSelectedPhoto(photo)}
+            >
+              <img src={photo.url} alt={photo.title} />
+              <div className="photo-overlay">
+                <h3 className="photo-title">{photo.title}</h3>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Photo Modal */}
+      {selectedPhoto && (
+        <div className="photo-modal" onClick={() => setSelectedPhoto(null)}>
+          <div className="photo-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setSelectedPhoto(null)}>
+              ×
+            </button>
+            <img src={selectedPhoto.url} alt={selectedPhoto.title} />
+          </div>
+        </div>
+      )}
+
+      {/* Music Album Section */}
+      <section className="music-section">
+        <div className="section-header">
+          <h2 className="section-title">Music Albums</h2>
+          <p className="section-subtitle">Original soundtracks and compositions</p>
+        </div>
+        <div className="music-container">
+          <div className="music-player">
+            <div className="album-artwork">
+              <img src="https://via.placeholder.com/400?text=Album+Cover" alt="Album Cover" />
+            </div>
+            <div className="music-info">
+              <h3 className="album-title">Sample Album</h3>
+              <p className="album-description">Experience our cinematic soundscapes and original compositions</p>
+              <audio controls className="audio-player">
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+              <a 
+                href="https://www.youtube.com/@KamodAI" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn-primary music-cta"
+              >
+                <span>View Full Albums</span>
+                <Send size={20} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Benefits Section */}
       <section className="benefits-section" id="services">
