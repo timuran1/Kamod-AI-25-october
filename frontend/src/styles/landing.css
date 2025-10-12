@@ -898,6 +898,11 @@
   .dark-nav {
     display: none;
   }
+
+  .video-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -918,6 +923,14 @@
     font-size: 18px;
   }
 
+  .hero-visual {
+    height: 400px;
+  }
+
+  .hero-video {
+    opacity: 0.1;
+  }
+
   .section-title {
     font-size: 32px;
   }
@@ -932,6 +945,20 @@
   .testimonials-grid {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+
+  .video-gallery {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .video-modal {
+    padding: 10px;
+  }
+
+  .modal-close {
+    top: -40px;
+    font-size: 36px;
   }
 
   .footer-content {
@@ -950,10 +977,50 @@
   .how-it-works-section,
   .pricing-section,
   .testimonials-section,
+  .portfolio-section,
   .faq-section,
   .cta-section,
   .footer {
     padding-left: 5%;
     padding-right: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn-primary,
+  .hero-cta-group .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .video-card {
+    border-radius: 0;
+  }
+
+  .play-overlay {
+    width: 60px;
+    height: 60px;
+  }
+
+  .play-overlay svg {
+    width: 32px;
+    height: 32px;
   }
 }
