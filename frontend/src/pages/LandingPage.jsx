@@ -303,7 +303,7 @@ const LandingPage = () => {
       <section className="photography-section">
         <div className="section-header">
           <h2 className="section-title">Photography</h2>
-          <p className="section-subtitle">Capturing moments through the lens</p>
+          <p className="section-subtitle">Capturing moments through the AI lens</p>
         </div>
         <div className="photography-grid">
           {photographyImages.map((photo) => (
