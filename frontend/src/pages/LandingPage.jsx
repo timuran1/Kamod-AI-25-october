@@ -184,8 +184,20 @@ const LandingPage = () => {
         </nav>
       </header>
 
-      {/* Hero Section */}
+      {/* Hero Section with Video Background */}
       <section className="hero-section">
+        <div className="hero-video-bg">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="hero-video"
+          >
+            <source src="https://customer-assets.emergentagent.com/job_c300197b-5f56-45dc-b810-546f43651b8f/artifacts/9aj92ggq_Show%20reel%20-2.mp4" type="video/mp4" />
+          </video>
+          <div className="hero-video-overlay"></div>
+        </div>
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
@@ -199,7 +211,7 @@ const LandingPage = () => {
                 <span>Start Your Project</span>
                 <Send size={20} />
               </a>
-              <button className="btn-secondary">
+              <button className="btn-secondary" onClick={() => setSelectedVideo(portfolioVideos[0])}>
                 <Play size={20} />
                 <span>Watch Showreel</span>
               </button>
