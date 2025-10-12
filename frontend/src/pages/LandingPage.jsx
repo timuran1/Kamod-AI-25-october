@@ -18,12 +18,34 @@ const LandingPage = () => {
     setEmail('');
   };
 
-  const partners = [
-    { name: 'Studio One', logo: 'https://via.placeholder.com/120x60?text=Studio+One' },
-    { name: 'Creative Agency', logo: 'https://via.placeholder.com/120x60?text=Creative+Agency' },
-    { name: 'Tech Labs', logo: 'https://via.placeholder.com/120x60?text=Tech+Labs' },
-    { name: 'Film Productions', logo: 'https://via.placeholder.com/120x60?text=Film+Productions' },
+  const portfolioVideos = [
+    {
+      id: 1,
+      title: 'Project Showcase 1',
+      youtubeId: 'K0UHPvnDyUg',
+      thumbnail: 'https://img.youtube.com/vi/K0UHPvnDyUg/maxresdefault.jpg'
+    },
+    {
+      id: 2,
+      title: 'Project Showcase 2',
+      youtubeId: '-iN4W0-o6sM',
+      thumbnail: 'https://img.youtube.com/vi/-iN4W0-o6sM/maxresdefault.jpg'
+    },
+    {
+      id: 3,
+      title: 'Project Showcase 3',
+      youtubeId: 'LS54iBHtNzQ',
+      thumbnail: 'https://img.youtube.com/vi/LS54iBHtNzQ/maxresdefault.jpg'
+    },
+    {
+      id: 4,
+      title: 'Project Showcase 4',
+      youtubeId: 'QFOHxQuueJk',
+      thumbnail: 'https://img.youtube.com/vi/QFOHxQuueJk/maxresdefault.jpg'
+    }
   ];
+
+  const [selectedVideo, setSelectedVideo] = useState(null);
 
   const benefits = [
     {
