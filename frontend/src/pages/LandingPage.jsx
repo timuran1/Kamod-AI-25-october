@@ -266,18 +266,6 @@ const LandingPage = () => {
         </div>
       )}
 
-      {/* Partners Section */}
-      <section className="partners-section">
-        <p className="partners-label">Trusted by leading studios and agencies</p>
-        <div className="partners-grid">
-          {partners.map((partner, index) => (
-            <div key={index} className="partner-logo">
-              <img src={partner.logo} alt={partner.name} />
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Benefits Section */}
       <section className="benefits-section" id="services">
         <div className="section-header">
