@@ -223,6 +223,49 @@ const LandingPage = () => {
         </div>
       </section>
 
+      {/* Video Gallery / Portfolio Section */}
+      <section className="portfolio-section" id="portfolio">
+        <div className="section-header">
+          <h2 className="section-title">Our Work</h2>
+          <p className="section-subtitle">Explore our latest film productions and visual effects</p>
+        </div>
+        <div className="video-gallery">
+          {portfolioVideos.map((video) => (
+            <div key={video.id} className="video-card" onClick={() => setSelectedVideo(video)}>
+              <div className="video-thumbnail">
+                <img src={video.thumbnail} alt={video.title} />
+                <div className="play-overlay">
+                  <Play size={48} />
+                </div>
+              </div>
+              <h3 className="video-title">{video.title}</h3>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Video Modal */}
+      {selectedVideo && (
+        <div className="video-modal" onClick={() => setSelectedVideo(null)}>
+          <div className="video-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setSelectedVideo(null)}>
+              ×
+            </button>
+            <div className="video-wrapper">
+              <iframe
+                width="100%"
+                height="100%"
+                src={`https://www.youtube.com/embed/${selectedVideo.youtubeId}?autoplay=1`}
+                title={selectedVideo.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Partners Section */}
       <section className="partners-section">
         <p className="partners-label">Trusted by leading studios and agencies</p>
