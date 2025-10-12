@@ -342,13 +342,13 @@ const LandingPage = () => {
         <div className="music-container">
           <div className="music-player">
             <div className="album-artwork">
-              <img src="https://via.placeholder.com/400?text=Album+Cover" alt="Album Cover" />
+              <img src="https://via.placeholder.com/400?text=Illuminations+of+the+Shahnameh" alt="Album Cover" />
             </div>
             <div className="music-info">
-              <h3 className="album-title">Sample Album</h3>
+              <h3 className="album-title">Illuminations of the Shahnameh</h3>
               <p className="album-description">Experience our cinematic soundscapes and original compositions</p>
               <audio controls className="audio-player">
-                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+                <source src="https://customer-assets.emergentagent.com/job_c300197b-5f56-45dc-b810-546f43651b8f/artifacts/ki1bfwlx_Illuminations_of_the_Shahnameh_2025-08-31T173920.mp3" type="audio/mpeg" />
                 Your browser does not support the audio element.
               </audio>
               <a 
