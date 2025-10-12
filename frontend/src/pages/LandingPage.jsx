@@ -53,12 +53,21 @@ const LandingPage = () => {
   ];
 
   const photographyImages = [
-    { id: 1, url: 'https://via.placeholder.com/600x400?text=Photo+1', title: 'Cinematic Shot 1' },
-    { id: 2, url: 'https://via.placeholder.com/600x400?text=Photo+2', title: 'Cinematic Shot 2' },
-    { id: 3, url: 'https://via.placeholder.com/600x400?text=Photo+3', title: 'Cinematic Shot 3' },
-    { id: 4, url: 'https://via.placeholder.com/600x400?text=Photo+4', title: 'Cinematic Shot 4' },
-    { id: 5, url: 'https://via.placeholder.com/600x400?text=Photo+5', title: 'Cinematic Shot 5' },
-    { id: 6, url: 'https://via.placeholder.com/600x400?text=Photo+6', title: 'Cinematic Shot 6' }
+    { 
+      id: 1, 
+      url: 'https://customer-assets.emergentagent.com/job_c300197b-5f56-45dc-b810-546f43651b8f/artifacts/2bfa37hc_freepik__-v15-15-imax-70-__80682.png', 
+      title: 'Cinematic Vision' 
+    },
+    { 
+      id: 2, 
+      url: 'https://customer-assets.emergentagent.com/job_c300197b-5f56-45dc-b810-546f43651b8f/artifacts/wmxr69ph_render.png', 
+      title: 'AI Rendered Masterpiece' 
+    },
+    { 
+      id: 3, 
+      url: 'https://customer-assets.emergentagent.com/job_c300197b-5f56-45dc-b810-546f43651b8f/artifacts/e7ndwsml_916300ce-79ec-4195-b001-267b875c3511.jpeg', 
+      title: 'Artistic Expression' 
+    }
   ];
 
   const [selectedVideo, setSelectedVideo] = useState(null);
