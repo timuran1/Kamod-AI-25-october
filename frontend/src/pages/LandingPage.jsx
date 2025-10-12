@@ -22,30 +22,47 @@ const LandingPage = () => {
     {
       id: 1,
       title: 'Project Showcase 1',
-      youtubeId: 'K0UHPvnDyUg',
-      thumbnail: 'https://img.youtube.com/vi/K0UHPvnDyUg/maxresdefault.jpg'
+      youtubeId: 'oj9ybliR90o',
+      thumbnail: 'https://img.youtube.com/vi/oj9ybliR90o/maxresdefault.jpg'
     },
     {
       id: 2,
       title: 'Project Showcase 2',
-      youtubeId: '-iN4W0-o6sM',
-      thumbnail: 'https://img.youtube.com/vi/-iN4W0-o6sM/maxresdefault.jpg'
+      youtubeId: 'yvOXc-FG7bU',
+      thumbnail: 'https://img.youtube.com/vi/yvOXc-FG7bU/maxresdefault.jpg'
     },
     {
       id: 3,
       title: 'Project Showcase 3',
-      youtubeId: 'LS54iBHtNzQ',
-      thumbnail: 'https://img.youtube.com/vi/LS54iBHtNzQ/maxresdefault.jpg'
+      youtubeId: 'nP7CacC1c_8',
+      thumbnail: 'https://img.youtube.com/vi/nP7CacC1c_8/maxresdefault.jpg'
     },
     {
       id: 4,
       title: 'Project Showcase 4',
       youtubeId: 'QFOHxQuueJk',
       thumbnail: 'https://img.youtube.com/vi/QFOHxQuueJk/maxresdefault.jpg'
+    },
+    {
+      id: 5,
+      title: 'Behind The Scenes',
+      youtubeId: 'UvCjJ9I-mRg',
+      thumbnail: 'https://img.youtube.com/vi/UvCjJ9I-mRg/maxresdefault.jpg',
+      isShort: true
     }
   ];
 
+  const photographyImages = [
+    { id: 1, url: 'https://via.placeholder.com/600x400?text=Photo+1', title: 'Cinematic Shot 1' },
+    { id: 2, url: 'https://via.placeholder.com/600x400?text=Photo+2', title: 'Cinematic Shot 2' },
+    { id: 3, url: 'https://via.placeholder.com/600x400?text=Photo+3', title: 'Cinematic Shot 3' },
+    { id: 4, url: 'https://via.placeholder.com/600x400?text=Photo+4', title: 'Cinematic Shot 4' },
+    { id: 5, url: 'https://via.placeholder.com/600x400?text=Photo+5', title: 'Cinematic Shot 5' },
+    { id: 6, url: 'https://via.placeholder.com/600x400?text=Photo+6', title: 'Cinematic Shot 6' }
+  ];
+
   const [selectedVideo, setSelectedVideo] = useState(null);
+  const [selectedPhoto, setSelectedPhoto] = useState(null);
 
   const benefits = [
     {
