@@ -492,26 +492,17 @@ const LandingPage = () => {
           <h2 className="section-title">Trusted by Creators Worldwide</h2>
           <p className="section-subtitle">What filmmakers and producers say about us</p>
         </div>
-        {testimonials.length > 0 ? (
-          <div className="testimonials-grid">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="testimonial-card">
-                <p className="testimonial-content">"{testimonial.content}"</p>
-                <div className="testimonial-author">
-                  <img src={testimonial.avatar} alt={testimonial.name} className="author-avatar" />
-                  <div>
-                    <div className="author-name">{testimonial.name}</div>
-                    <div className="author-role">{testimonial.role}</div>
-                  </div>
-                </div>
+        <div className="testimonials-grid">
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="testimonial-card">
+              <p className="testimonial-content">"{testimonial.content}"</p>
+              <div className="testimonial-author-no-image">
+                <div className="author-name">{testimonial.name}</div>
+                <div className="author-role">{testimonial.role}</div>
               </div>
-            ))}
-          </div>
-        ) : (
-          <div className="testimonials-coming-soon">
-            <p className="coming-soon-text">Client testimonials coming soon</p>
-          </div>
-        )}
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* FAQ Section */}
