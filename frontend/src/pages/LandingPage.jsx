@@ -471,34 +471,48 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section className="pricing-section" id="pricing">
+      {/* AI for Creators Education Section */}
+      <section className="education-section" id="ai-creators">
         <div className="section-header">
-          <h2 className="section-title">Pricing Plans</h2>
-          <p className="section-subtitle">Choose the perfect plan for your project</p>
+          <h2 className="section-title">AI for Creators</h2>
+          <p className="section-subtitle">Master AI filmmaking with our comprehensive course</p>
         </div>
-        <div className="pricing-grid">
-          {pricingPlans.map((plan, index) => (
-            <div key={index} className={`pricing-card ${plan.featured ? 'featured' : ''}`}>
-              {plan.featured && <div className="featured-badge">Most Popular</div>}
-              <h3 className="pricing-name">{plan.name}</h3>
-              <div className="pricing-price">{plan.price}</div>
-              <p className="pricing-description">{plan.description}</p>
-              <ul className="pricing-features">
-                {plan.features.map((feature, idx) => (
-                  <li key={idx} className="pricing-feature">
-                    <Check size={18} className="feature-icon" />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              <a href={`mailto:timuran1@gmail.com?subject=Inquiry about ${plan.name} Plan`} className="btn-secondary pricing-cta">
-                Book a Call
-              </a>
+        <div className="education-grid">
+          {educationLessons.map((lesson) => (
+            <div key={lesson.id} className="lesson-card" onClick={() => setSelectedLesson(lesson)}>
+              <div className="lesson-thumbnail">
+                <img src={lesson.thumbnail} alt={lesson.title} />
+                <div className="lesson-play-overlay">
+                  <Play size={32} />
+                </div>
+                <div className="lesson-duration">{lesson.duration}</div>
+              </div>
+              <h3 className="lesson-title">{lesson.title}</h3>
             </div>
           ))}
         </div>
+        <div className="education-cta">
+          <a href="mailto:timuran1@gmail.com?subject=AI for Creators - Enrollment Inquiry" className="btn-primary">
+            <span>Book a Call</span>
+            <Mail size={20} />
+          </a>
+        </div>
       </section>
+
+      {/* Lesson Modal */}
+      {selectedLesson && (
+        <div className="video-modal" onClick={() => setSelectedLesson(null)}>
+          <div className="video-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setSelectedLesson(null)}>
+              ×
+            </button>
+            <div className="lesson-modal-content">
+              <h2 className="lesson-modal-title">{selectedLesson.title}</h2>
+              <p className="lesson-modal-description">Lesson content will be available soon. Stay tuned!</p>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Testimonials */}
       <section className="testimonials-section" id="testimonials">
