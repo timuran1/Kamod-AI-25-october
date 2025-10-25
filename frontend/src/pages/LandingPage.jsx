@@ -257,7 +257,7 @@ const LandingPage = () => {
           <a href="#how-it-works" className="dark-nav-link">How it Works</a>
           <a href="#portfolio" className="dark-nav-link">Portfolio</a>
           <a href="#testimonials" className="dark-nav-link">Testimonials</a>
-          <a href="#pricing" className="dark-nav-link">Pricing</a>
+          <a href="#ai-creators" className="dark-nav-link">AI for Creators</a>
           <a href="#faq" className="dark-nav-link">FAQ</a>
           <a href="https://t.me/timuran1" target="_blank" rel="noopener noreferrer" className="btn-primary">
             Start Your Project
