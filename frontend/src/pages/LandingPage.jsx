@@ -314,7 +314,29 @@ const LandingPage = () => {
           {portfolioVideos.map((video) => (
             <div 
               key={video.id} 
-              className={`video-card ${video.isShort ? 'video-card-vertical' : ''}`}
+              className="video-card"
+              onClick={() => setSelectedVideo(video)}
+            >
+              <div className="video-thumbnail">
+                <img src={video.thumbnail} alt={video.title} />
+                <div className="play-overlay">
+                  <Play size={48} />
+                </div>
+              </div>
+              <h3 className="video-title">{video.title}</h3>
+            </div>
+          ))}
+        </div>
+
+        {/* Shorts Section */}
+        <div className="shorts-header">
+          <h3 className="shorts-title">Shorts & Trailers</h3>
+        </div>
+        <div className="shorts-gallery">
+          {shortsVideos.map((video) => (
+            <div 
+              key={video.id} 
+              className="video-card video-card-vertical"
               onClick={() => setSelectedVideo(video)}
             >
               <div className="video-thumbnail">
