@@ -207,26 +207,7 @@ const LandingPage = () => {
     },
   ];
 
-  const testimonials = [
-    {
-      name: 'Sarah Mitchell',
-      role: 'Independent Filmmaker',
-      content: 'Kamod AI transformed our post-production timeline from 3 months to 3 weeks. The quality is outstanding.',
-      avatar: 'https://via.placeholder.com/60',
-    },
-    {
-      name: 'James Rodriguez',
-      role: 'Creative Director, Vista Studios',
-      content: 'The AI-powered VFX are incredible. We achieved visuals we thought were impossible within our budget.',
-      avatar: 'https://via.placeholder.com/60',
-    },
-    {
-      name: 'Emily Chen',
-      role: 'Producer',
-      content: 'Professional results, lightning-fast delivery. Kamod AI is our go-to for every project now.',
-      avatar: 'https://via.placeholder.com/60',
-    },
-  ];
+  const testimonials = [];
 
   const faqs = [
     {
