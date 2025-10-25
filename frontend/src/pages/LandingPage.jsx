@@ -477,42 +477,17 @@ const LandingPage = () => {
           <h2 className="section-title">AI for Creators</h2>
           <p className="section-subtitle">Master AI filmmaking with our comprehensive course</p>
         </div>
-        <div className="education-grid">
-          {educationLessons.map((lesson) => (
-            <div key={lesson.id} className="lesson-card" onClick={() => setSelectedLesson(lesson)}>
-              <div className="lesson-thumbnail">
-                <img src={lesson.thumbnail} alt={lesson.title} />
-                <div className="lesson-play-overlay">
-                  <Play size={32} />
-                </div>
-                <div className="lesson-duration">{lesson.duration}</div>
-              </div>
-              <h3 className="lesson-title">{lesson.title}</h3>
-            </div>
-          ))}
-        </div>
-        <div className="education-cta">
-          <a href="mailto:timuran1@gmail.com?subject=AI for Creators - Enrollment Inquiry" className="btn-primary">
-            <span>Book a Call</span>
-            <Mail size={20} />
-          </a>
-        </div>
-      </section>
-
-      {/* Lesson Modal */}
-      {selectedLesson && (
-        <div className="video-modal" onClick={() => setSelectedLesson(null)}>
-          <div className="video-modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="modal-close" onClick={() => setSelectedLesson(null)}>
-              ×
-            </button>
-            <div className="lesson-modal-content">
-              <h2 className="lesson-modal-title">{selectedLesson.title}</h2>
-              <p className="lesson-modal-description">Lesson content will be available soon. Stay tuned!</p>
-            </div>
+        <div className="education-coming-soon">
+          <div className="coming-soon-card">
+            <h3 className="coming-soon-title">Master AI filmmaking with our comprehensive course</h3>
+            <p className="coming-soon-message">Lesson content will be available soon. Stay tuned!</p>
+            <a href="mailto:timuran1@gmail.com?subject=AI for Creators - Enrollment Inquiry" className="btn-primary">
+              <span>Book a Call</span>
+              <Mail size={20} />
+            </a>
           </div>
         </div>
-      )}
+      </section>
 
       {/* Testimonials */}
       <section className="testimonials-section" id="testimonials">
