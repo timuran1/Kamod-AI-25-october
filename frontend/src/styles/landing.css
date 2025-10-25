@@ -1028,6 +1028,12 @@
   gap: 16px;
 }
 
+.testimonial-author-no-image {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .author-avatar {
   width: 60px;
   height: 60px;
