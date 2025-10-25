@@ -573,7 +573,7 @@
 }
 
 .music-container {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -601,6 +601,18 @@
   height: 300px;
   object-fit: cover;
   border: 1px solid var(--border-subtle);
+}
+
+.music-player-simple {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  padding: 60px;
+  transition: all 0.4s ease-in-out;
+}
+
+.music-player-simple:hover {
+  border-color: var(--brand-primary);
+  box-shadow: 0 8px 32px rgba(0, 255, 209, 0.2);
 }
 
 .music-info {
@@ -634,6 +646,123 @@
 
 .music-cta {
   align-self: flex-start;
+}
+
+/* Education Section - AI for Creators */
+.education-section {
+  padding: 100px 7.6923%;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto 60px;
+}
+
+.lesson-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.lesson-card:hover {
+  border-color: var(--brand-primary);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 255, 209, 0.2);
+}
+
+.lesson-thumbnail {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  background: #000;
+}
+
+.lesson-thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.lesson-card:hover .lesson-thumbnail img {
+  transform: scale(1.05);
+}
+
+.lesson-play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 255, 209, 0.2);
+  border: 2px solid var(--brand-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.lesson-card:hover .lesson-play-overlay {
+  background: rgba(0, 255, 209, 0.3);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.lesson-play-overlay svg {
+  color: var(--brand-primary);
+}
+
+.lesson-duration {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: var(--text-primary);
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.lesson-title {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.education-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.lesson-modal-content {
+  padding: 60px;
+  text-align: center;
+}
+
+.lesson-modal-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.lesson-modal-description {
+  font-size: 18px;
+  color: var(--text-secondary);
+  line-height: 1.6;
 }
 
 /* Section Shared Styles */
