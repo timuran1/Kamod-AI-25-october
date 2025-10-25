@@ -21,35 +21,89 @@ const LandingPage = () => {
   const portfolioVideos = [
     {
       id: 1,
-      title: 'Project Showcase 1',
+      title: 'Architecture and urban development during the reign of the Temurids AI Film',
       youtubeId: 'oj9ybliR90o',
       thumbnail: 'https://img.youtube.com/vi/oj9ybliR90o/maxresdefault.jpg'
     },
     {
       id: 2,
-      title: 'Project Showcase 2',
+      title: 'Timurd Princes patrons of knowledge and education AI Film',
       youtubeId: 'yvOXc-FG7bU',
       thumbnail: 'https://img.youtube.com/vi/yvOXc-FG7bU/maxresdefault.jpg'
     },
     {
       id: 3,
-      title: 'Project Showcase 3',
+      title: "Mughal Woman's contribution to knowledge and science AI Film",
       youtubeId: 'nP7CacC1c_8',
       thumbnail: 'https://img.youtube.com/vi/nP7CacC1c_8/maxresdefault.jpg'
     },
     {
       id: 4,
-      title: 'Project Showcase 4',
+      title: 'Iron and Fire the battle of Amir Temur - AI Film',
       youtubeId: 'QFOHxQuueJk',
       thumbnail: 'https://img.youtube.com/vi/QFOHxQuueJk/maxresdefault.jpg'
     },
     {
       id: 5,
-      title: 'Behind The Scenes',
+      title: 'От мысли к жизни',
+      youtubeId: 'z4gQ9SRrNtk',
+      thumbnail: 'https://img.youtube.com/vi/z4gQ9SRrNtk/maxresdefault.jpg'
+    },
+    {
+      id: 6,
+      title: 'Strength Is Not in the Sword',
+      youtubeId: 'cwPFCvffyZE',
+      thumbnail: 'https://img.youtube.com/vi/cwPFCvffyZE/maxresdefault.jpg'
+    },
+    {
+      id: 7,
+      title: 'No Life Perfect',
+      youtubeId: 'Fuoygv_Hfxk',
+      thumbnail: 'https://img.youtube.com/vi/Fuoygv_Hfxk/maxresdefault.jpg'
+    },
+    {
+      id: 8,
+      title: 'NRG Service Ташкент',
+      youtubeId: '7dyY28b57w8',
+      thumbnail: 'https://img.youtube.com/vi/7dyY28b57w8/maxresdefault.jpg'
+    }
+  ];
+
+  const shortsVideos = [
+    {
+      id: 1,
+      title: 'Kalit Trailer AI Film',
       youtubeId: 'UvCjJ9I-mRg',
       thumbnail: 'https://img.youtube.com/vi/UvCjJ9I-mRg/maxresdefault.jpg',
       isShort: true
+    },
+    {
+      id: 2,
+      title: 'UGC style ad',
+      youtubeId: '8WPOYsEmCKQ',
+      thumbnail: 'https://img.youtube.com/vi/8WPOYsEmCKQ/maxresdefault.jpg',
+      isShort: true
+    },
+    {
+      id: 3,
+      title: 'UGC style ad',
+      youtubeId: 'HR2HOaYBn6A',
+      thumbnail: 'https://img.youtube.com/vi/HR2HOaYBn6A/maxresdefault.jpg',
+      isShort: true
     }
+  ];
+
+  const educationLessons = [
+    { id: 1, title: 'Lesson 1: Introduction to AI Filmmaking', duration: '3:45', thumbnail: 'https://via.placeholder.com/400x225?text=Lesson+1' },
+    { id: 2, title: 'Lesson 2: Scriptwriting with AI', duration: '4:20', thumbnail: 'https://via.placeholder.com/400x225?text=Lesson+2' },
+    { id: 3, title: 'Lesson 3: AI Visual Effects Basics', duration: '3:15', thumbnail: 'https://via.placeholder.com/400x225?text=Lesson+3' },
+    { id: 4, title: 'Lesson 4: Advanced Editing Techniques', duration: '4:00', thumbnail: 'https://via.placeholder.com/400x225?text=Lesson+4' },
+    { id: 5, title: 'Lesson 5: Color Grading with AI', duration: '3:30', thumbnail: 'https://via.placeholder.com/400x225?text=Lesson+5' },
+    { id: 6, title: 'Lesson 6: Sound Design & Music', duration: '3:50', thumbnail: 'https://via.placeholder.com/400x225?text=Lesson+6' },
+    { id: 7, title: 'Lesson 7: Character Animation', duration: '4:10', thumbnail: 'https://via.placeholder.com/400x225?text=Lesson+7' },
+    { id: 8, title: 'Lesson 8: Scene Composition', duration: '3:25', thumbnail: 'https://via.placeholder.com/400x225?text=Lesson+8' },
+    { id: 9, title: 'Lesson 9: Post-Production Workflow', duration: '4:15', thumbnail: 'https://via.placeholder.com/400x225?text=Lesson+9' },
+    { id: 10, title: 'Lesson 10: Final Project & Portfolio', duration: '3:40', thumbnail: 'https://via.placeholder.com/400x225?text=Lesson+10' }
   ];
 
   const photographyImages = [
