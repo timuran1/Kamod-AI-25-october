@@ -126,6 +126,7 @@ const LandingPage = () => {
 
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [selectedPhoto, setSelectedPhoto] = useState(null);
+  const [selectedLesson, setSelectedLesson] = useState(null);
 
   const benefits = [
     {
