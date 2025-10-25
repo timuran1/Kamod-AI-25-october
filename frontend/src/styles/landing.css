@@ -287,6 +287,27 @@
   margin: 0 auto;
 }
 
+.shorts-header {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.shorts-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.shorts-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
 .video-card {
   background: var(--bg-primary);
   border: 1px solid var(--border-subtle);
