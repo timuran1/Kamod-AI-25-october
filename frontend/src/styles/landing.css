@@ -1047,6 +1047,27 @@
   color: var(--text-muted);
 }
 
+.testimonials-coming-soon {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 40px;
+  background: var(--bg-primary);
+  border: 2px solid var(--border-subtle);
+  transition: all 0.4s ease-in-out;
+}
+
+.testimonials-coming-soon:hover {
+  border-color: var(--brand-primary);
+  box-shadow: 0 8px 32px rgba(0, 255, 209, 0.2);
+}
+
+.coming-soon-text {
+  font-size: 24px;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
 /* FAQ Section */
 .faq-section {
   padding: 100px 7.6923%;
