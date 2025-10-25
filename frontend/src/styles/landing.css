@@ -1316,6 +1316,18 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
   }
+
+  .coming-soon-card {
+    padding: 60px 40px;
+  }
+
+  .coming-soon-title {
+    font-size: 28px;
+  }
+
+  .coming-soon-message {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 768px) {
