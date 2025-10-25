@@ -1311,6 +1311,11 @@
     gap: 30px;
   }
 
+  .shorts-gallery {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
   .video-card-vertical {
     max-width: 100%;
   }
@@ -1325,6 +1330,10 @@
     gap: 30px;
   }
 
+  .music-player-simple {
+    padding: 30px;
+  }
+
   .album-artwork img {
     width: 100%;
     height: auto;
@@ -1333,6 +1342,11 @@
 
   .album-title {
     font-size: 24px;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
   }
 
   .video-modal {
