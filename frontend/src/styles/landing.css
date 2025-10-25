@@ -1437,8 +1437,20 @@
     gap: 20px;
   }
 
+  .music-player-simple {
+    padding: 20px;
+  }
+
   .music-cta {
     width: 100%;
     justify-content: center;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lesson-title {
+    font-size: 16px;
   }
 }
